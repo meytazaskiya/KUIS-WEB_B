@@ -6,7 +6,8 @@
     <title>Linktree & Jadwal</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Times New Roman', Times ;
+            background: linear-gradient(to right, #5c058b, #db1886); 
             background: linear-gradient(to right, #5c058b, #db1886); 
             margin: 0;
             padding: 0;
