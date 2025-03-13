@@ -41,7 +41,7 @@
         }
 
         .nav-buttons button:hover {
-            background: #ff85c2;
+            background: #76b7df;
             transform: scale(1.1);
         }
 
@@ -131,13 +131,12 @@
 
     <div class="container">
 
-        <!-- Tombol navigasi ke halaman lain -->
         <div class="nav-buttons">
             <button onclick="showPage('linktree')"> Linktree</button>
             <button onclick="showPage('jadwal')"> Jadwal Kuliah</button>
         </div>
 
-        <!-- Tampilan Linktree -->
+        
         <div id="linktree" class="content active">
             <div class="profile">
                 <img src="potopropil.png" alt="Profile Picture">
@@ -162,9 +161,8 @@
         </div>
         </div>
 
-        <!-- Tampilan Jadwal Kuliah -->
         <div id="jadwal" class="content">
-            <h2 style="color: white;">📅 Jadwal Kuliah</h2>
+            <h2 style="color: white;"> Jadwal Kuliah</h2>
             <table>
                 <tr>
                     <th rowspan="2">Jam</th>
