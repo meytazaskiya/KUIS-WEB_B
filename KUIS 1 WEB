@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #A14CCF, #FF3CAC); 
+            background: linear-gradient(to right, #5c058b, #db1886); 
             margin: 0;
             padding: 0;
             display: flex;
@@ -155,7 +155,7 @@
             <div class="social-icons">
                 <a href="https://www.instagram.com/apeldanjeruk//">📷</a>
                 <a href="https://id.linkedin.com/">🐦</a>
-                <a href="https://www.google.com/search?sca_esv=ed3fcdd2868a633a&sxsrf=AHTn8zqC7_zA4byJGyetLxcfSRCLsJ8Rrw:1741852517209&q=kupu+kupu&source=lnms&fbs=ABzOT_AwQaTtgY8-S7vGF49bzvV9GQEhLOn-iSyNDJvW6UxZnwO49PIF9k4uUuqnOF015qVvCffAjppvyTNIoAmf4kqA6Kp79D1AMdF07x952-ZvM5HiNxBpU4XCsNhXylyiZPueIlix-iHaY9zDTRJQE0u7BRc5ioBvZ8rIIW4hiayakyEB76386k2C9hsoRN6dDVIJpsTJW3emTvSwC3pAVOD7ilo3G_wuMui6F1IHjVEwC5r7A1U&sa=X&ved=2ahUKEwiM8KekyoaMAxVZyDgGHbTwBHMQ0pQJegQIEhAB&biw=1517&bih=703&dpr=0.9">💼</a>
+                <a href="https://www.instagram.com/apeldanjeruk">💼</a>
                 <a href="https://id.linkedin.com/">🎵</a>
                 <a href="https://www.instagram.com/apeldanjeruk">✉</a>
             </div>
@@ -213,6 +213,7 @@
                     <td colspan="2"></td>
                     <td>Web (P)</td>
                     <td>Web (T)</td>
+                </tr>
                 </tr>
             </table>
         </div>
