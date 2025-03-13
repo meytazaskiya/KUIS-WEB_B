@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linktree & Jadwal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #A14CCF, #FF3CAC); 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 90%;
+        }
+
+        /* Tombol navigasi */
+        .nav-buttons {
+            margin-bottom: 20px;
+        }
+
+        .nav-buttons button {
+            background: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .nav-buttons button:hover {
+            background: #ff85c2;
+            transform: scale(1.1);
+        }
+
+        .content {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+
+        .profile h2 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .links {
+            margin-top: 20px;
+        }
+
+        .links a {
+            display: block;
+            background: white;
+            color: black;
+            text-decoration: none;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .links a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        /* Tabel Jadwal */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid white;
+            color: white;
+        }
+
+        th {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        td {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Tombol navigasi ke halaman lain -->
+        <div class="nav-buttons">
+            <button onclick="showPage('linktree')"> Linktree</button>
+            <button onclick="showPage('jadwal')"> Jadwal Kuliah</button>
+        </div>
+
+        <!-- Tampilan Linktree -->
+        <div id="linktree" class="content active">
+            <div class="profile">
+                <img src="potopropil.png" alt="Profile Picture">
+                <h2>Meyta Zaskiya</h2>
+            </div>
+
+            <div class="links">
+                <a href="https://www.youtube.com/">Join Bolster Mailing List</a>
+                <a href="https://www.youtube.com/">Work at Linktree</a>
+                <a href="https://www.youtube.com/">Bolster</a>
+                <a href="https://www.youtube.com/">LNWY</a>
+                <a href="https://www.youtube.com/">Linktree</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.instagram.com/apeldanjeruk//">📷</a>
+                <a href="https://id.linkedin.com/">🐦</a>
+                <a href="https://www.google.com/search?sca_esv=ed3fcdd2868a633a&sxsrf=AHTn8zqC7_zA4byJGyetLxcfSRCLsJ8Rrw:1741852517209&q=kupu+kupu&source=lnms&fbs=ABzOT_AwQaTtgY8-S7vGF49bzvV9GQEhLOn-iSyNDJvW6UxZnwO49PIF9k4uUuqnOF015qVvCffAjppvyTNIoAmf4kqA6Kp79D1AMdF07x952-ZvM5HiNxBpU4XCsNhXylyiZPueIlix-iHaY9zDTRJQE0u7BRc5ioBvZ8rIIW4hiayakyEB76386k2C9hsoRN6dDVIJpsTJW3emTvSwC3pAVOD7ilo3G_wuMui6F1IHjVEwC5r7A1U&sa=X&ved=2ahUKEwiM8KekyoaMAxVZyDgGHbTwBHMQ0pQJegQIEhAB&biw=1517&bih=703&dpr=0.9">💼</a>
+                <a href="https://id.linkedin.com/">🎵</a>
+                <a href="https://www.instagram.com/apeldanjeruk">✉</a>
+            </div>
+        </div>
+        </div>
+
+        <!-- Tampilan Jadwal Kuliah -->
+        <div id="jadwal" class="content">
+            <h2 style="color: white;">📅 Jadwal Kuliah</h2>
+            <table>
+                <tr>
+                    <th rowspan="2">Jam</th>
+                    <th colspan="5">Hari</th>
+                </tr>
+                <tr>
+                    <th>Senin</th>
+                    <th>Selasa</th>
+                    <th>Rabu</th>
+                    <th>Kamis</th>
+                    <th>Jumat</th>
+                </tr>
+                <tr>
+                    <td>07.30 - 08.40</td>
+                    <td></td>
+                    <td>TI</td>
+                    <td colspan="2"></td>
+    
+                    <td>PDT (R)</td>
+                </tr>
+                <tr>
+                    <td>8.45 - 10.00</td>
+                    <td>TAM (T)</td>
+                    <td>ADSI (T)</td>
+                    <td>IoT (P)</td>
+                    <td>ML (T)</td>
+                    <td>ML (R)</td>
+                </tr>
+                <tr>
+                    <td>10.10 - 11.20</td>
+                    <td></td>
+                    <td>AI (T)</td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <td>12.30 - 13.40</td>
+                    <td>IoT (T)</td>
+                    <td>AI (R)</td>
+                    <td></td>
+                    <td>ADSI (R)</td>
+                    <td>TAM (P)</td>
+                </tr>
+                <tr>
+                    <td>13.50 - 15.00</td>
+                    <td>PDT (P)</td>
+                    <td colspan="2"></td>
+                    <td>Web (P)</td>
+                    <td>Web (T)</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            document.getElementById('linktree').classList.remove('active');
+            document.getElementById('jadwal').classList.remove('active');
+
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+
+</body>
+
+</html>
